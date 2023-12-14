@@ -31,6 +31,6 @@ public class OptionsButtonFunctions : MonoBehaviour, ISelectHandler, IPointerEnt
     void Start()
     {
         Debug.Log("Button is no longer highlighted");
-        animator.Play("OptionsButton Idle");
+        animator.Play("OptionsButtonIdle");
     }
 }

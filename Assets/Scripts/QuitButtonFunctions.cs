@@ -13,13 +13,13 @@ public class QuitButtonFunctions : MonoBehaviour, ISelectHandler, IPointerEnterH
     public void OnPointerEnter(PointerEventData eventData)
     {
         Debug.Log("Button is highlighted");
-        animator.Play("QuitButton");
+        animator.Play("QuitGameButton");
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         Debug.Log("Button is no longer highlighted");
-        animator.Play("QuitButton Deselect");
+        animator.Play("QuitGameButton Deselect");
     }
 
     public void OnSelect(BaseEventData eventData)
@@ -31,7 +31,7 @@ public class QuitButtonFunctions : MonoBehaviour, ISelectHandler, IPointerEnterH
     void Start()
     {
         Debug.Log("Button is no longer highlighted");
-        //animator.Play("QuitButton Idle");
+        animator.Play("QuitGameButton Idle");
     }
     
 }
