@@ -7,7 +7,7 @@ public class UIButtonFunctions : MonoBehaviour, ISelectHandler, IPointerEnterHan
 {
 
     public Animator animator;
-    public Animator animator2;
+    //public Animator animator2;
     bool isHighlighted = true;
 
 
@@ -15,7 +15,7 @@ public class UIButtonFunctions : MonoBehaviour, ISelectHandler, IPointerEnterHan
     {
          Debug.Log("Button is highlighted");
          animator.Play("NewGameButton");
-        animator2.Play("Main Camera, New Game Transition");
+        //animator2.Play("Main Camera, New Game Transition");
     }
     
     public void OnPointerExit(PointerEventData eventData)
