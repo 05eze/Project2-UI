@@ -4,21 +4,19 @@ using UnityEngine;
 
 public class HiddenNewGamePanelSettings : MonoBehaviour
 {
-    GameObject panel;
+    public GameObject panel;
     Animator animator;
     
     void Start()
     {
-        panel.SetActive(false);
+        panel.SetActive(true);
+        animator.Play("PANEL-NewGame-SlideIN");
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        if (panel.SetActive(true))
-        {
-            animator.Play("PANEL-NewGame-SlideIN");
-        }
+        panel.SetActive(true);
     }
 }
